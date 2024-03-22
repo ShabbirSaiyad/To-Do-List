@@ -53,7 +53,7 @@ function toggleCompletion(id) {
     if (index !== -1) {
         taskList[index].completed = !taskList[index].completed;
         localStorage.setItem("Tasks", JSON.stringify(taskList));
-        console.log(taskList);
+        // console.log(taskList);
         displayTask();
     }
 
