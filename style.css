@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Oranienbaum&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: #c8e2d9c3;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Oranienbaum";
+    overflow-x: hidden;
+   
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:30px;
+    margin-top:40px;
+}
+
+.mainHeading{
+    font-family: "Fredericka the Great";
+    font-size: 50px;
+}
+
+.selectTask{
+    padding: 10px;
+    outline: none;
+    border-radius: 6px;
+    width: 300px;
+    outline: none;
+    border:2px solid #006b3c;
+}
+
+input::placeholder{
+    color:#006b3c;
+    font-family: "Poppins";
+}
+
+.addTask{
+    background-color: #006b3c;
+    border-radius: 4px;
+    padding: 6px;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    font-family: "Poppins";
+    cursor: pointer;
+    
+}
+
+.totalTask{
+    color:#006b3c;
+    font-family: "Oranienbaum";
+    font-size:25px;
+}
+
+
+.allTasks{
+    display: flex;
+   
+    flex-wrap: wrap;
+    gap:50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.oneTaskDiv{
+    border: 2px solid #006b3c;
+    padding:30px;
+    border-radius: 12px;
+}
+
+.contentDiv{
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+
+
+input[type='checkbox']:checked {
+    background-color: #006b3c;
+}
+
+input[type='checkbox']:checked:after {
+    content: '\2713';
+    color:white;
+}
+
+input[type='checkbox']{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    width: 20px !important;
+    height: 20px !important;
+    appearance:none;
+    border-radius:10%;
+    border: 1px solid #006b3c;
+    box-shadow: none;
+    font-size: 1em;
+}
+
+.taskContent{
+    font-size:25px;
+    font-family: "Oranienbaum";
+}
+
+
+.operateBtn{
+    display: flex;
+    margin-top: 20px;
+    gap : 20px;
+
+}
+
+.edit{
+    color:black;
+    font-size: 16px;
+    padding:8px 12px;
+    border: none;
+    border-radius:6px;
+    /* background-color:  rgba(0, 107, 61, 0.796); */
+    background-color: #d0f0c0;
+    filter:drop-shadow(4px 4px 3.5px rgba(0, 0, 0, 0.502));
+    cursor: pointer;
+    font-family: "Poppins";
+}
+
+.edit:active {
+    background-color: #006b3c;
+    color: white;
+}
+
+.delete:active {
+
+    background-color: #006b3c;
+    color: white;
+}
+
+.delete{
+    color:black;
+    font-size: 16px;
+    padding:8px 12px;
+    border: none;
+    border-radius:6px;
+    background-color: #d0f0c0;
+    filter:drop-shadow(4px 4px 3.5px rgba(0, 0, 0, 0.502));
+    cursor: pointer;
+    font-family: "Poppins";
+}
+
+/* @media screen and (min-width:330px){
+    .allTasks{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media screen and (min-width:884px){
+    .allTasks{
+        grid-template-columns: repeat(2,1fr);
+    }
+} */
+
+
+@media screen and (max-width:764px){
+    .allTasks{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
