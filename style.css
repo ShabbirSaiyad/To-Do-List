@@ -31,9 +31,10 @@ body{
     padding: 10px;
     outline: none;
     border-radius: 6px;
-    width: 300px;
+    width: 350px;
     outline: none;
     border:2px solid #006b3c;
+    font-size: 20px;
 }
 
 input::placeholder{
